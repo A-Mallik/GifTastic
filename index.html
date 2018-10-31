@@ -1,0 +1,76 @@
+<html>
+  <head>
+      <title>
+            GifTastic!
+      </title>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <!-- Bootstrap -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href= "assets/css/style.css" type= "text/css" />
+
+      <link rel="shortcut icon" type="image/x-icon" href="assets/images/giphylogo.jpg"/>
+
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+<div class="container-fluid col" >
+
+
+    <div class="titleHeader">
+      <h1>GifTastic!</h1><br /><h5>Click on a button to see the magic! <br /> You can also add your own.</p></h5> Click on the gifs to toggle animation. <span>Double-click</span> a gif to add it to your favorites! (saved into local storage)
+    <br />By design, the 'Clear Favorites' button will also clear local storage. If it is not clicked, the page will keep the favorite gifs when the page is reloaded and clicking 'Load Favorites' will load those gifs onto the page.</div>
+    <br />
+    <div id = "buttonsFormulate">
+    </div>
+    <br />
+    <input id="userInput" />
+    <div id="submits"class="btn btn-primary">Submit</div>
+    <br />
+    <br />
+    <div id="additionalRequests" class="btn btn-light">Load 10 More</div>
+    <div id="favoriteGifsDiv" class="btn btn-light">Load favorites</div>
+    <div id="cl" class="btn btn-dark">Clear Favorites</div>
+    <br />
+    <br />
+    <!-- ************************************* -->
+    <div class="jumbotron ">
+
+          <div class="container">
+              <!-- -=================== -->
+                   <div id="favorites" >   <!-- Div that will load all the favorite gifs saved. -->
+                    </div>
+              <!-- -=================== -->
+                   <div id="title">       <!--  Will display the title of topic clicked -->
+                    </div>
+              <!-- -=================== -->
+                     <div class="container " id="summ"> <!--   Will display retrieved summary of the subject from wikipedia API -->
+                    </div>
+              <!-- -=================== -->
+                   <div id="gifSection" >               <!--  //Section that will display the gifs. -->
+                    </div>
+              <!-- -=================== -->
+                  <p class="lead">Gifs Appear Here When Button is Clicked</p>
+          </div>
+    </div>
+
+    <!-- ************************************* -->
+
+
+
+
+  <script src="assets/javascript/gif.js"> </script>
+
+
+  </body>
+</html>

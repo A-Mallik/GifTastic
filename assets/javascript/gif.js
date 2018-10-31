@@ -55,7 +55,7 @@ $(document).ready(function(){
                           var gifSection = $("<div class='card' style='width: 18rem;'>");
                           var rating = results[i].rating;
                           var p = $("<p>").text("Rating: " + rating);                       //puts the rating in the paragraph tag
-                          var topicPic = $('<img class="card-img-top" src=".../100px180/" alt="Card image cap">');
+                          var topicPic = $('<img class="card-img-top"   alt="Card image cap">');
                           topicPic.attr("src", results[i].images.fixed_height_still.url);      // then grabs image still
                           topicPic.attr("data-still", results[i].images.fixed_height_still.url);      // sets still image to data-still attribute
                           topicPic.attr("data-animate", results[i].images.fixed_height.url);      // grabs this for the animate attribute
@@ -102,7 +102,7 @@ $(document).ready(function(){
                           var rating = results[i].rating;
                           //console.log(rating);
                           var p = $("<p>").text("Rating: " + rating);                       //puts the rating in the paragraph tag
-                          var topicPic = $('<img class="card-img-top" src=".../100px180/" alt="Card image cap">');
+                          var topicPic = $('<img class="card-img-top"   alt="Card image cap">');
                           topicPic.attr("src", results[i].images.fixed_height_still.url);      // then grabs image still
                           topicPic.attr("data-still", results[i].images.fixed_height_still.url);      // sets still image to data-still attribute
                           topicPic.attr("data-animate", results[i].images.fixed_height.url);      // grabs this for the animate attribute
@@ -138,7 +138,7 @@ $(document).ready(function(){
 
           for (var i = 0; i < getItem.length; i++) {
                var favoriteGifs = $("<div class='card' style='width: 18rem;'>");
-                var topicPic = $('<img class="card-img-top" src=".../100px180/" alt="Card image cap">');
+                var topicPic = $('<img class="card-img-top"   alt="Card image cap">');
                 temp = "<div class='card' style='width: 18rem;'><img src='" + getItem[i] + "' style='width:200px;'  /></div>";
                 console.log(getItem[i]);
                   // append gifs into favoriteGifs div

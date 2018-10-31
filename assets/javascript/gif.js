@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var favoriteList = []; //empty array for favorites list.
-      var info;
+      var summaryExtract;
  //------------------For Bonus: Adding Additional ----------------------------
      var lastbuttonClicked = []; // array to hold 'topic' for last button clicked to be used to add additional gifs when clicked
  //---------------------------------------------------
@@ -36,9 +36,9 @@ $(document).ready(function(){
        //------------------For Bonus----------------------------
      lastbuttonClicked.push(topic);
      $.getJSON('https://en.wikipedia.org/api/rest_v1/page/summary/' + topic, function(data) {       // wikipedia api to get a summary based on button already created or new buttons added
-              info = data.extract;
-              console.log(info);
-              $("#summ").html(info); //where the summary is shown on the page
+              summaryExtract = data.extract;                                                      //(only getJSON function worked with the api, .ajax and get kept giving me errors until I found this on stacked overflow)
+              console.log(summaryExtract);
+              $("#summ").html(summaryExtract); //where the summary is shown on the page
      });
        //------------------===========----------------------------
      $("#title").html("<h2>" + topic + "</h2>");

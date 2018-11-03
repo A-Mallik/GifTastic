@@ -119,7 +119,7 @@ $(document).ready(function(){
             console.log($(this)[0].dataset.animate);   //grabs the animated version of the gif
             favGifLink = $(this)[0].dataset.animate;
            //if(favoriteList.includes(favGifLink)){              //check if link is already in favorites list
-           if(favoriteList.includes(favGifLink) && !$(this)){              //check if link is already in favorites list
+           if(favoriteList.includes(favGifLink)){              //check if link is already in favorites list
 
              return false;                                     //if it is,return false
            }

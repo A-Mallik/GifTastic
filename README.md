@@ -1,8 +1,9 @@
 # GifTastic
 
+A web app that lets users view and leave comments on the latest news, using  Mongoose and Cheerio to scrape news from another site, making use of NodeJS, Giphy API, among other technologies.
+
 <img src="https://github.com/A-Mallik/GifTastic/blob/master/Giftastic.png?raw=true" width="500" height="270" alt="Giftastic">
 
-A web app that lets users view and leave comments on the latest news, using  Mongoose and Cheerio to scrape news from another site.
 
 https://nytimesscraper2019.herokuapp.com/
 
